@@ -1,7 +1,11 @@
 import Link from "next/link";
 
+const headerStyles = {
+  backgroundColor: "red"
+};
+
 export default () => (
-  <header>
+  <header style={headerStyles}>
     <nav>
       <ul>
         <li>
@@ -16,5 +20,17 @@ export default () => (
         </li>
       </ul>
     </nav>
+    <style jsx>{`
+      ul {
+        display: flex;
+      }
+      ul li {
+        margin-right: 20px;
+      }
+      header {
+        background-color: peru;
+        color: white;
+      }
+    `}</style>
   </header>
 );

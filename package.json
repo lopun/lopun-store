@@ -13,11 +13,12 @@
   },
   "homepage": "https://github.com/lopun/lopun-store#readme",
   "scripts": {
-    "dev": "next",
+    "dev": "node server",
     "build": "next build",
-    "start": "next start"
+    "start": "NODE_ENV=production node server"
   },
   "dependencies": {
+    "express": "^4.16.3",
     "next": "^7.0.1",
     "react": "^16.5.2",
     "react-dom": "^16.5.2"
