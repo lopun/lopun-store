@@ -31,13 +31,13 @@ eCommerce PWA Built with NextJS and GraphCMS
 
 # NextJS Theory
 
-- [ ] Introduction to NextJS
-- [ ] Difference between NextJS and CRA
-- [ ] What is SSR and why do we need it
-- [ ] Creating a NextJS App
-- [ ] Pages in NextJS
-- [ ] Links and Navigation
-- [ ] Shared Components
+- [x] Introduction to NextJS
+- [x] Difference between NextJS and CRA
+- [x] What is SSR and why do we need it
+- [x] Creating a NextJS App
+- [x] Pages in NextJS
+- [x] Links and Navigation
+- [x] Shared Components
 - [ ] Dynamic Pages
 - [ ] Pretty URLs
 - [ ] Styles on NextJS
