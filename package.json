@@ -1,0 +1,25 @@
+{
+  "name": "lopun-store",
+  "version": "1.0.0",
+  "description": "eCommerce PWA website built with \"NextJS\" and \"GraphCMS\".",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lopun/lopun-store.git"
+  },
+  "author": "lopun(sbagi@ssal.sparcs.org)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lopun/lopun-store/issues"
+  },
+  "homepage": "https://github.com/lopun/lopun-store#readme",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "^7.0.1",
+    "react": "^16.5.2",
+    "react-dom": "^16.5.2"
+  }
+}
