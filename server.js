@@ -9,9 +9,9 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get("/post/:title", (req, res) => {
-    const actualPage = "/post";
-    const queryParams = { title: req.params.title };
+  server.get("/movie/:id", (req, res) => {
+    const actualPage = "/movie";
+    const queryParams = { id: req.params.id };
     app.render(req, res, actualPage, queryParams);
   });
 
@@ -24,8 +24,5 @@ app.prepare().then(() => {
       if (err) throw err;
       console.log("> Ready on http://localhost:3000");
     })
-    .catch(exception => {
-      console.log(exception.stack);
-      process.exit(1);
-    });
+    .on("error", console.log);
 });
