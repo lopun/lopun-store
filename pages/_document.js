@@ -11,6 +11,11 @@ export default class CustomDocument extends Document {
       <html>
         <Head>
           <meta name="lopun" content={"Jihun Ko"} />
+          <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/antd/3.8.1/antd.min.css"
+            rel="stylesheet"
+          />
+          <style>{`body {background-color: #f0f2f5!important}`}</style>
         </Head>
         <body>
           <Main />

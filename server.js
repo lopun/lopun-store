@@ -9,9 +9,9 @@ const handle = app.getRequestHandler();
 app.prepare().then(() => {
   const server = express();
 
-  server.get("/movie/:id", (req, res) => {
-    const actualPage = "/movie";
-    const queryParams = { id: req.params.id };
+  server.get("/category/:name", (req, res) => {
+    const actualPage = "/category";
+    const queryParams = { name: req.params.name };
     app.render(req, res, actualPage, queryParams);
   });
 

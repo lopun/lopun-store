@@ -1,1 +1,3 @@
-export default () => <h1>category</h1>;
+export default props => {
+  return <h1>category</h1>;
+};
