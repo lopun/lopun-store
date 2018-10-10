@@ -29,4 +29,5 @@ class MyApp extends App {
   }
 }
 
+// apollo prop을 만들어준다.
 export default withApollo(MyApp);
