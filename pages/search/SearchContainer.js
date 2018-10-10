@@ -1,5 +1,5 @@
 import { Query } from "react-apollo";
-import SearchPresenter from "./SearchPresenter";
+import SearchPresenter from "./searchPresenter";
 import { SEARCH_QUERY } from "./searchQueries";
 
 export default class SearchContainer extends React.Component {

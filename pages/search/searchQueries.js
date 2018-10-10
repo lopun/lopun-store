@@ -1,4 +1,5 @@
 import { gql } from "apollo-boost";
+import { PRODUCT_FRAGMENT } from "../../fragment";
 
 export const SEARCH_QUERY = gql`
   query searchQuery($searchTerm: String!) {
@@ -7,13 +8,8 @@ export const SEARCH_QUERY = gql`
         OR: [{ name_contains: $searchTerm }, { detail_contains: $searchTerm }]
       }
     ) {
-      id
-      name
-      detail
-      price
-      photo {
-        url
-      }
+      ...ProductItems
     }
   }
+  ${PRODUCT_FRAGMENT}
 `;
