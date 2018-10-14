@@ -1,5 +1,7 @@
 import { withRouter } from "next/router";
+import { Query } from "react-apollo";
 import ProductPresenter from "./productPresenter";
+import { PRODUCT_QUERY } from "./productQueries";
 
 class ProductContainer extends React.Component {
   static async getInitialProps(props) {
@@ -12,8 +14,11 @@ class ProductContainer extends React.Component {
   }
   render() {
     const { id } = this.props;
-    console.log(id);
-    return <ProductPresenter />;
+    return (
+      <Query query={PRODUCT_QUERY} variables={{ id }}>
+        {({ data }) => <ProductPresenter data={data} />}
+      </Query>
+    );
   }
 }
 
