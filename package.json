@@ -15,7 +15,7 @@
   "scripts": {
     "dev": "node server",
     "build": "next build",
-    "start": "NODE_ENV=production node server"
+    "start": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
     "antd": "3.8.1",
@@ -28,5 +28,8 @@
     "react": "^16.5.2",
     "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
