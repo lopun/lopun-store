@@ -3,6 +3,8 @@ import App, { Container } from "next/app";
 import React from "react";
 import { ApolloProvider } from "react-apollo";
 import withApollo from "../lib/withApollo";
+import withNProgress from "next-nprogress";
+import NProgressStyles from "next-nprogress/styles";
 const { Footer } = Layout;
 
 class MyApp extends App {
@@ -19,6 +21,7 @@ class MyApp extends App {
     return (
       <ApolloProvider client={apollo}>
         <Container>
+          <NProgressStyles color="#29d" spinner={false} />
           <Layout>
             <Component {...pageProps} />
             <Footer>This is important</Footer>
@@ -30,4 +33,4 @@ class MyApp extends App {
 }
 
 // apollo prop을 만들어준다.
-export default withApollo(MyApp);
+export default withNProgress(300)(withApollo(MyApp));
