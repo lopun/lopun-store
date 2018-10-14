@@ -6,7 +6,14 @@ export const PRODUCT_QUERY = gql`
     product(where: { id: $id }) {
       ...ProductItems
       detail
+      onCart @client
     }
   }
   ${PRODUCT_FRAGMENT}
+`;
+
+export const TOGGLE_CART = gql`
+  mutation toggleCart($id: ID!) {
+    toggleProduct(id: $id) @client
+  }
 `;
