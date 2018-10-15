@@ -13,13 +13,23 @@
   },
   "homepage": "https://github.com/lopun/lopun-store#readme",
   "scripts": {
-    "dev": "next",
+    "dev": "node server",
     "build": "next build",
-    "start": "next start"
+    "start": "cross-env NODE_ENV=production node server"
   },
   "dependencies": {
+    "antd": "3.8.1",
+    "apollo-boost": "^0.1.16",
+    "express": "^4.16.3",
+    "graphql": "^14.0.2",
     "next": "^7.0.1",
+    "next-nprogress": "^1.1.0",
+    "next-with-apollo": "^3.2.0",
     "react": "^16.5.2",
+    "react-apollo": "^2.2.4",
     "react-dom": "^16.5.2"
+  },
+  "devDependencies": {
+    "cross-env": "^5.2.0"
   }
 }
