@@ -1,6 +1,10 @@
-# lopun-store
+# Lopun Store
 
-eCommerce PWA website built with "NextJS" and "GraphCMS".
+eCommerce PWA Built with NextJS and GraphCMS
+
+# Demo
+
+- [Deployed By Now](https://lopun-store-cjaejtvusx.now.sh)
 
 ## Commands
 
@@ -25,10 +29,6 @@ npm run build
 yarn build
 ```
 
-# Lopun Store
-
-eCommerce PWA Built with NextJS and GraphCMS
-
 # NextJS Theory
 
 - [x] Introduction to NextJS
@@ -45,6 +45,6 @@ eCommerce PWA Built with NextJS and GraphCMS
 # NextJS Practice Project
 
 - [x] Defining the Pages
-- [ ] Custom App Component
-- [ ] Custom Document Component
-- [ ] Fetching Data with NextJS
+- [x] Custom App Component
+- [x] Custom Document Component
+- [x] Fetching Data with NextJS
